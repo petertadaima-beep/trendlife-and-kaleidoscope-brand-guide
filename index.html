@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoscope Brand Guide | TrendLife</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #0d1117;
+            color: #f5f0e8;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* SIDEBAR NAVIGATION */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            background: linear-gradient(180deg, #0d1117 0%, #0d1117 50%, rgba(13, 17, 23, 0.95) 100%);
+            border-right: 1px solid rgba(245, 240, 232, 0.07);
+            padding: 2rem 1.5rem;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(245, 240, 232, 0.07);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 0.75rem;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: #f5f0e8;
+            margin-bottom: 0.25rem;
+        }
+
+        .logo-subtext {
+            font-size: 12px;
+            color: rgba(245, 240, 232, 0.55);
+        }
+
+        .nav-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(245, 240, 232, 0.4);
+            margin-bottom: 0.75rem;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.5rem 0.75rem;
+            font-size: 14px;
+            color: rgba(245, 240, 232, 0.7);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            margin-bottom: 0.25rem;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(215, 25, 32, 0.1);
+            color: #f5f0e8;
+            padding-left: 1rem;
+        }
+
+        .nav-link.active {
+            background-color: rgba(215, 25, 32, 0.15);
+            color: #D71920;
+            font-weight: 600;
+        }
+
+        /* MAIN CONTENT */
+        .main {
+            margin-left: 280px;
+            padding: 0;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeInSection 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+        section:nth-child(5) { animation-delay: 0.5s; }
+        section:nth-child(6) { animation-delay: 0.6s; }
+        section:nth-child(7) { animation-delay: 0.7s; }
+        section:nth-child(8) { animation-delay: 0.8s; }
+        section:nth-child(9) { animation-delay: 0.9s; }
+        section:nth-child(10) { animation-delay: 1s; }
+        section:nth-child(11) { animation-delay: 1.1s; }
+        section:nth-child(12) { animation-delay: 1.2s; }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(245, 240, 232, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: rgba(245, 240, 232, 0.6);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: rgba(245, 240, 232, 0.5);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .accent {
+            color: #D71920;
+        }
+
+        /* HERO */
+        #hero {
+            background: linear-gradient(135deg, #0d1117 0%, rgba(215, 25, 32, 0.05) 100%);
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-content h1 {
+            background: linear-gradient(135deg, #f5f0e8 0%, #D71920 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+
+        .canonical-sentence {
+            font-size: 18px;
+            font-weight: 500;
+            color: #4ECDC4;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(245, 240, 232, 0.07);
+            max-width: 600px;
+        }
+
+        /* COLOR SWATCHES */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .color-swatch {
+            transition: all 0.3s ease;
+        }
+
+        .color-box {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(245, 240, 232, 0.07);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .color-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(215, 25, 32, 0.2);
+        }
+
+        .color-info {
+            padding-top: 0.5rem;
+        }
+
+        .color-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #f5f0e8;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-hex {
+            font-size: 13px;
+            font-family: 'Courier New', monospace;
+            color: rgba(245, 240, 232, 0.6);
+            margin-bottom: 0.5rem;
+        }
+
+        .color-usage {
+            font-size: 13px;
+            color: rgba(245, 240, 232, 0.5);
+            line-height: 1.4;
+        }
+
+        /* COLOR PALETTES */
+        .palette-section {
+            margin-bottom: 3rem;
+        }
+
+        .palette-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #f5f0e8;
+        }
+
+        /* TYPOGRAPHY */
+        .type-scale {
+            margin-top: 2rem;
+        }
+
+        .type-specimen {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(245, 240, 232, 0.02);
+            border-left: 3px solid #D71920;
+            border-radius: 4px;
+        }
+
+        .type-specimen-label {
+            font-size: 12px;
+            color: rgba(245, 240, 232, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .type-sample {
+            font-family: 'Geist', 'Inter', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .type-48 { font-size: 48px; font-weight: 700; letter-spacing: -0.03em; }
+        .type-32 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; }
+        .type-24 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+        .type-18 { font-size: 18px; font-weight: 500; }
+        .type-14 { font-size: 14px; font-weight: 400; }
+
+        /* LOGOS */
+        .logo-display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .logo-context {
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(245, 240, 232, 0.07);
+        }
+
+        .logo-dark {
+            background: #0d1117;
+        }
+
+        .logo-light {
+            background: #f5f0e8;
+        }
+
+        .logo-red {
+            background: #D71920;
+        }
+
+        .logo-svg {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo-context-label {
+            font-size: 12px;
+            color: rgba(245, 240, 232, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* NARRATIVE DIAGRAM */
+        .narrative-diagram {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(245, 240, 232, 0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(245, 240, 232, 0.07);
+        }
+
+        .act {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(215, 25, 32, 0.05);
+            border-left: 3px solid #D71920;
+            border-radius: 4px;
+        }
+
+        .act:last-child {
+            margin-bottom: 0;
+        }
+
+        .act-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #f5f0e8;
+            margin-bottom: 0.5rem;
+        }
+
+        .act-audience-journey {
+            font-size: 14px;
+            color: rgba(245, 240, 232, 0.6);
+            margin-bottom: 0.5rem;
+        }
+
+        .act-details {
+            font-size: 14px;
+            color: rgba(245, 240, 232, 0.5);
+            line-height: 1.6;
+        }
+
+        /* CHARACTER CARDS */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .character-card {
+            padding: 2rem;
+            background: rgba(245, 240, 232, 0.035);
+            border: 1px solid rgba(245, 240, 232, 0.07);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .character-card:hover {
+            background: rgba(245, 240, 232, 0.05);
+            border-color: rgba(245, 240, 232, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .character-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #D71920 0%, #4ECDC4 100%);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .character-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f5f0e8;
+            margin-bottom: 0.25rem;
+        }
+
+        .character-age {
+            font-size: 13px;
+            color: rgba(245, 240, 232, 0.5);
+            margin-bottom: 1rem;
+        }
+
+        .character-role {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4ECDC4;
+            margin-bottom: 0.5rem;
+        }
+
+        .character-traits {
+            font-size: 13px;
+            color: rgba(245, 240, 232, 0.6);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .character-provenance {
+            font-size: 12px;
+            color: rgba(245, 240, 232, 0.5);
+            padding-top: 1rem;
+            border-top: 1px solid rgba(245, 240, 232, 0.07);
+        }
+
+        /* VOICE & TONE */
+        .voice-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .voice-subsection {
+            margin-bottom: 1.5rem;
+        }
+
+        .voice-subsection h5 {
+            color: #4ECDC4;
+            margin-bottom: 0.75rem;
+        }
+
+        .word-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .word-tag {
+            padding: 0.5rem 1rem;
+            background: rgba(245, 240, 232, 0.05);
+            border: 1px solid rgba(245, 240, 232, 0.1);
+            border-radius: 4px;
+            font-size: 14px;
+            color: rgba(245, 240, 232, 0.8);
+        }
+
+        .word-tag.use {
+            border-color: #34d399;
+            color: #34d399;
+        }
+
+        .word-tag.avoid {
+            border-color: rgba(215, 25, 32, 0.5);
+            color: rgba(215, 25, 32, 0.8);
+        }
+
+        /* UI VISUAL LANGUAGE */
+        .ui-mode {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(245, 240, 232, 0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(245, 240, 232, 0.07);
+        }
+
+        .ui-mode h4 {
+            color: #f5f0e8;
+            margin-bottom: 1rem;
+        }
+
+        .ui-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .ui-spec-item {
+            padding: 1rem;
+            background: rgba(215, 25, 32, 0.05);
+            border-left: 2px solid #D71920;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .ui-spec-label {
+            font-weight: 600;
+            color: #f5f0e8;
+            margin-bottom: 0.25rem;
+        }
+
+        .ui-spec-value {
+            color: rgba(245, 240, 232, 0.6);
+        }
+
+        /* CONTENT GUIDELINES */
+        .guideline-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .guideline-list li {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            font-size: 15px;
+            color: rgba(245, 240, 232, 0.8);
+            line-height: 1.6;
+        }
+
+        .guideline-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #D71920;
+            font-weight: 700;
+        }
+
+        /* GTM POSITIONING */
+        .positioning-box {
+            padding: 2rem;
+            background: rgba(245, 240, 232, 0.02);
+            border: 2px solid #D71920;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .positioning-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(245, 240, 232, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .positioning-content {
+            font-size: 16px;
+            font-weight: 500;
+            color: #f5f0e8;
+            line-height: 1.6;
+        }
+
+        /* ASSET INVENTORY */
+        .asset-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .asset-table th {
+            background: rgba(245, 240, 232, 0.05);
+            padding: 1rem;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 700;
+            color: #f5f0e8;
+            border-bottom: 1px solid rgba(245, 240, 232, 0.1);
+        }
+
+        .asset-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(245, 240, 232, 0.07);
+            font-size: 14px;
+            color: rgba(245, 240, 232, 0.8);
+        }
+
+        .asset-table tr:hover {
+            background: rgba(245, 240, 232, 0.02);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1200px) {
+            .sidebar {
+                width: 240px;
+            }
+
+            .main {
+                margin-left: 240px;
+            }
+
+            section {
+                padding: 3rem 2rem;
+            }
+
+            h1 { font-size: 48px; }
+            h2 { font-size: 36px; }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                max-height: 400px;
+                overflow-y: auto;
+                border-right: none;
+                border-bottom: 1px solid rgba(245, 240, 232, 0.07);
+            }
+
+            .main {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            section {
+                min-height: auto;
+                padding: 2rem 1.5rem;
+                margin-top: 0;
+            }
+
+            h1 { font-size: 36px; }
+            h2 { font-size: 28px; }
+            h3 { font-size: 24px; }
+
+            .color-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* UTILITY CLASSES */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .spacer {
+            height: 2rem;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(245, 240, 232, 0.07);
+            margin: 2rem 0;
+        }
+
+        /* SCROLLBAR */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0d1117;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(215, 25, 32, 0.5);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(215, 25, 32, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-section">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- TrendLife interlocking rings -->
+                <circle cx="35" cy="35" r="18" stroke="#D71920" stroke-width="4" fill="none" opacity="0.8"/>
+                <circle cx="65" cy="35" r="18" stroke="#D71920" stroke-width="4" fill="none" opacity="0.6"/>
+                <circle cx="50" cy="60" r="18" stroke="#D71920" stroke-width="4" fill="none" opacity="0.7"/>
+            </svg>
+            <div class="logo-text">KALEIDOSCOPE</div>
+            <div class="logo-subtext">Brand System</div>
+        </div>
+
+        <nav>
+            <div class="nav-section">
+                <div class="nav-section-title">Foundations</div>
+                <a href="#hero" class="nav-link active" onclick="setActive(event)">Hero</a>
+                <a href="#architecture" class="nav-link" onclick="setActive(event)">Brand Architecture</a>
+                <a href="#colors" class="nav-link" onclick="setActive(event)">Color System</a>
+                <a href="#typography" class="nav-link" onclick="setActive(event)">Typography</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Brand Identity</div>
+                <a href="#logos" class="nav-link" onclick="setActive(event)">Logo System</a>
+                <a href="#voice" class="nav-link" onclick="setActive(event)">Voice & Tone</a>
+                <a href="#narrative" class="nav-link" onclick="setActive(event)">Narrative Architecture</a>
+                <a href="#characters" class="nav-link" onclick="setActive(event)">Characters</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Product & Execution</div>
+                <a href="#ui-language" class="nav-link" onclick="setActive(event)">UI Visual Language</a>
+                <a href="#content-guidelines" class="nav-link" onclick="setActive(event)">Content Guidelines</a>
+                <a href="#gtm" class="nav-link" onclick="setActive(event)">GTM Positioning</a>
+                <a href="#assets" class="nav-link" onclick="setActive(event)">Asset Inventory</a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- 1. HERO -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Kaleidoscope<br>Brand System</h1>
+                <p class="subtitle">The definitive reference for TrendLife's flagship family AI product</p>
+                <p class="tagline">For internal use — content creation pipeline reference</p>
+                <div class="divider"></div>
+                <p class="canonical-sentence">TrendLife launches Kaleidoscope, the first family AI — built with Anthropic.</p>
+            </div>
+        </section>
+
+        <!-- 2. BRAND ARCHITECTURE -->
+        <section id="architecture">
+            <h2>Brand Architecture</h2>
+            <p class="subtitle">The relationship between TrendLife, Kaleidoscope, and Anthropic</p>
+
+            <div class="spacer"></div>
+
+            <div class="grid-2">
+                <div>
+                    <h4>TrendLife</h4>
+                    <p>The company. The house brand. The parent organization that builds AI products for families.</p>
+                    <p><strong>In brand communication:</strong> Appears as the parent entity, the vision-setter, the trusted company behind the product.</p>
+                </div>
+                <div>
+                    <h4>Kaleidoscope</h4>
+                    <p>The product. The family AI platform. Lives within the TrendLife ecosystem as the flagship offering.</p>
+                    <p><strong>In brand communication:</strong> Leads consumer messaging. The primary benefit statement.</p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <h4>Anthropic</h4>
+                    <p>The technology partner. The AI safety innovator. Powers Kaleidoscope with architecture that guarantees family-aware reasoning.</p>
+                    <p><strong>In brand communication:</strong> Credibility layer. Appears in press, positioning, and technical trust moments.</p>
+                </div>
+                <div>
+                    <h4>Three Words Only</h4>
+                    <p>Never use more than these three names in consumer-facing communication: <span class="accent">Kaleidoscope</span>, <span class="accent">Anthropic</span>, <span class="accent">TrendLife</span>.</p>
+                    <p>Never name competitors. Never use "AI Butler" as a product name (it's a metaphor, not naming).</p>
+                </div>
+            </div>
+
+            <div class="divider" style="margin-top: 3rem;"></div>
+
+            <h4 style="margin-top: 3rem;">Naming Discipline Rules</h4>
+            <ul class="guideline-list">
+                <li>Never "TrendLife AI Butler" or "Kaleidoscope AI Butler"</li>
+                <li>Butler is a metaphor for how the product works, not its name</li>
+                <li>Never name competitors on stage or in marketing</li>
+                <li>The phrase "AI Butler" is dead as a product name</li>
+                <li>Visual hierarchy: TrendLife is the house. Kaleidoscope is the product within that system.</li>
+            </ul>
+        </section>
+
+        <!-- 3. COLOR SYSTEM -->
+        <section id="colors">
+            <h2>Color System</h2>
+            <p class="subtitle">Full palette for all applications and contexts</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Primary Palette</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #D71920;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Trend Red</div>
+                        <div class="color-hex">#D71920</div>
+                        <div class="color-usage">Primary brand color. Headlines, CTAs, brand moments. Primary context.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #d4243b;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Trend Red (Dark)</div>
+                        <div class="color-hex">#d4243b</div>
+                        <div class="color-usage">Trend Red for dark UI contexts. Hover states, emphasis.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #2a3a4a;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Charcoal</div>
+                        <div class="color-hex">#2a3a4a</div>
+                        <div class="color-usage">Deep blue-charcoal. Secondary frames, secondary text, alternative dark context.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f5f0e8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Cream</div>
+                        <div class="color-hex">#f5f0e8</div>
+                        <div class="color-usage">Primary text on dark. Premium warm feeling. Light mode background.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #3a0a0a;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Burgundy</div>
+                        <div class="color-hex">#3a0a0a</div>
+                        <div class="color-usage">Deep burgundy accent. Rare use. Emotional, intimate contexts.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Accent Spectrum</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f07878;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Coral</div>
+                        <div class="color-hex">#f07878</div>
+                        <div class="color-usage">Warm accent. Emotional beats, creative states, optimism.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #e8833a;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Orange</div>
+                        <div class="color-hex">#e8833a</div>
+                        <div class="color-usage">Energy, warmth, growth. Positive progress indicators.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #e8a838;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Amber</div>
+                        <div class="color-hex">#e8a838</div>
+                        <div class="color-usage">Convergence moments. Both/And states. Transitions between trust layers.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0a6e6e;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Teal</div>
+                        <div class="color-hex">#0a6e6e</div>
+                        <div class="color-usage">Deep calm. Structure, support, grounding.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #4ecdc4;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Teal</div>
+                        <div class="color-hex">#4ecdc4</div>
+                        <div class="color-usage">Signature accent. UI elements, interactive states, family connection.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #a8d8ea;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Sky</div>
+                        <div class="color-hex">#a8d8ea</div>
+                        <div class="color-usage">Light, open, possibility. Backgrounds, secondary UI.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f0a8b8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Pink</div>
+                        <div class="color-hex">#f0a8b8</div>
+                        <div class="color-usage">Care, softness, nurture. Wellness moments.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #b8a8d8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Lilac</div>
+                        <div class="color-hex">#b8a8d8</div>
+                        <div class="color-usage">Wisdom, reflection, learning. Anthropic-adjacent.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #ffffff;"></div>
+                    <div class="color-info">
+                        <div class="color-name">White</div>
+                        <div class="color-hex">#ffffff</div>
+                        <div class="color-usage">Pure clarity. Critical text, high contrast moments.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">UI Dark Mode (Product)</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0d1117;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#0d1117</div>
+                        <div class="color-usage">Primary dark background. App canvas. Page base.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #f5f0e8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Text</div>
+                        <div class="color-hex">#f5f0e8</div>
+                        <div class="color-usage">Main heading and body text. High contrast on dark.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0d1117; border: 1px dashed rgba(245,240,232,0.55);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary Text</div>
+                        <div class="color-hex">rgba(245,240,232,.55)</div>
+                        <div class="color-usage">Supporting text, metadata, disabled states.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: rgba(245,240,232,.035);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Card Background</div>
+                        <div class="color-hex">rgba(245,240,232,.035)</div>
+                        <div class="color-usage">Card, panel, and container backgrounds.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #0d1117; border: 1px solid rgba(245,240,232,.07);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Card Border</div>
+                        <div class="color-hex">rgba(245,240,232,.07)</div>
+                        <div class="color-usage">Card and panel borders. Subtle separation.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Trust Layer Colors (Act 3)</h3>
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #9B8FFF;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Anthropic Purple</div>
+                        <div class="color-hex">#9B8FFF</div>
+                        <div class="color-usage">Inner trust, wisdom, AI reasoning. Annotation borders in Act 3.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #4ECDC4;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Trend Teal</div>
+                        <div class="color-hex">#4ECDC4</div>
+                        <div class="color-usage">Outer trust, protection, family care. Annotation borders in Act 3.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #E8A838;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Both/Amber</div>
+                        <div class="color-hex">#E8A838</div>
+                        <div class="color-usage">Convergence of trust layers. Moments where Anthropic + Trend align.</div>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background-color: #34d399;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Green</div>
+                        <div class="color-hex">#34d399</div>
+                        <div class="color-usage">Positive signals, safety verified, good outcome states.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TYPOGRAPHY -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <p class="subtitle">Type system for all applications and scales</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Primary Typeface</h3>
+            <p>Use <strong>Geist</strong> (imported from Google Fonts) for all primary brand communication. <strong>Inter</strong> as fallback with same weight range (300–900). For Microsoft Office fallback contexts, use <strong>Aptos</strong>. For special characters and international language support, pair with <strong>Noto Sans</strong>.</p>
+
+            <div class="spacer"></div>
+
+            <h4>Headlines</h4>
+            <ul class="guideline-list">
+                <li>Weight: 700–900 (bold to extra-bold)</li>
+                <li>Letter-spacing: −0.03em to −0.04em (tight tracking)</li>
+                <li>Color: Cream (#f5f0e8) on dark; Charcoal (#2a3a4a) on light</li>
+                <li>Line-height: 1.1–1.15 (tight leading)</li>
+            </ul>
+
+            <h4 style="margin-top: 1.5rem;">Body Text</h4>
+            <ul class="guideline-list">
+                <li>Weight: 400–500 (regular to medium)</li>
+                <li>Letter-spacing: 0 (normal)</li>
+                <li>Color: Cream (#f5f0e8) with 80% opacity for primary; 55% opacity for secondary</li>
+                <li>Line-height: 1.5–1.6 (readable)</li>
+            </ul>
+
+            <div class="spacer"></div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">Type Scale Specimens</h3>
+
+            <div class="type-scale">
+                <div class="type-specimen">
+                    <div class="type-specimen-label">48px / 900 Weight / Headline</div>
+                    <div class="type-sample type-48">The quick brown fox</div>
+                </div>
+
+                <div class="type-specimen">
+                    <div class="type-specimen-label">32px / 700 Weight / Subheading</div>
+                    <div class="type-sample type-32">The quick brown fox</div>
+                </div>
+
+                <div class="type-specimen">
+                    <div class="type-specimen-label">24px / 600 Weight / Section Title</div>
+                    <div class="type-sample type-24">The quick brown fox jumps over</div>
+                </div>
+
+                <div class="type-specimen">
+                    <div class="type-specimen-label">18px / 500 Weight / Body Large</div>
+                    <div class="type-sample type-18">The quick brown fox jumps over the lazy dog</div>
+                </div>
+
+                <div class="type-specimen">
+                    <div class="type-specimen-label">14px / 400 Weight / Body Regular</div>
+                    <div class="type-sample type-14">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. LOGO SYSTEM -->
+        <section id="logos">
+            <h2>Logo System</h2>
+            <p class="subtitle">TrendLife, Kaleidoscope, and app icon treatments</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">TrendLife Logo</h3>
+            <p>Interlocking rings motif with "TrendLife" wordmark. The rings represent connection, family, and the interlocking of individuals into a single system.</p>
+
+            <div class="logo-display">
+                <div class="logo-context logo-dark">
+                    <svg class="logo-svg" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Interlocking rings -->
+                        <circle cx="40" cy="50" r="20" stroke="#D71920" stroke-width="3" fill="none"/>
+                        <circle cx="70" cy="50" r="20" stroke="#D71920" stroke-width="3" fill="none" opacity="0.7"/>
+                        <circle cx="55" cy="70" r="20" stroke="#D71920" stroke-width="3" fill="none" opacity="0.5"/>
+                        <!-- Wordmark -->
+                        <text x="110" y="58" font-family="Geist, Inter, sans-serif" font-size="24" font-weight="700" fill="#f5f0e8" letter-spacing="-0.03em">TrendLife</text>
+                    </svg>
+                    <div class="logo-context-label">Dark Background</div>
+                </div>
+
+                <div class="logo-context logo-light">
+                    <svg class="logo-svg" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="50" r="20" stroke="#D71920" stroke-width="3" fill="none"/>
+                        <circle cx="70" cy="50" r="20" stroke="#D71920" stroke-width="3" fill="none" opacity="0.7"/>
+                        <circle cx="55" cy="70" r="20" stroke="#D71920" stroke-width="3" fill="none" opacity="0.5"/>
+                        <text x="110" y="58" font-family="Geist, Inter, sans-serif" font-size="24" font-weight="700" fill="#2a3a4a" letter-spacing="-0.03em">TrendLife</text>
+                    </svg>
+                    <div class="logo-context-label">Light Background</div>
+                </div>
+
+                <div class="logo-context logo-red">
+                    <svg class="logo-svg" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="50" r="20" stroke="#f5f0e8" stroke-width="3" fill="none"/>
+                        <circle cx="70" cy="50" r="20" stroke="#f5f0e8" stroke-width="3" fill="none" opacity="0.7"/>
+                        <circle cx="55" cy="70" r="20" stroke="#f5f0e8" stroke-width="3" fill="none" opacity="0.5"/>
+                        <text x="110" y="58" font-family="Geist, Inter, sans-serif" font-size="24" font-weight="700" fill="#f5f0e8" letter-spacing="-0.03em">TrendLife</text>
+                    </svg>
+                    <div class="logo-context-label">Trend Red Background</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Kaleidoscope Icon</h3>
+            <p>A flower/kaleidoscope shape with teal, coral, and amber petals radiating from a glowing center. Used as product icon, in interface navigation, and as the brand mark within the TrendLife ecosystem.</p>
+
+            <div class="logo-display">
+                <div class="logo-context logo-dark">
+                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Petals -->
+                        <path d="M 50 10 Q 65 25 60 50 Q 65 25 80 15 Q 70 30 65 50 Q 75 35 85 40 Q 70 45 60 50 Q 70 55 85 60 Q 75 65 65 50 Q 70 70 80 85 Q 65 75 60 50 Q 65 75 50 90 Q 50 70 50 50 Q 50 70 35 90 Q 35 75 40 50 Q 35 75 20 85 Q 30 65 40 50 Q 25 55 15 60 Q 30 45 40 50 Q 25 35 15 40 Q 30 30 40 50 Q 35 25 20 15 Q 35 30 40 50 Q 35 25 50 10 Z" fill="#4ECDC4" opacity="0.9"/>
+                        <!-- Center glow -->
+                        <circle cx="50" cy="50" r="16" fill="#E8A838"/>
+                        <circle cx="50" cy="50" r="12" fill="#f5f0e8"/>
+                        <circle cx="52" cy="48" r="4" fill="#0d1117" opacity="0.3"/>
+                    </svg>
+                    <div class="logo-context-label">Dark Background</div>
+                </div>
+
+                <div class="logo-context logo-light">
+                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 50 10 Q 65 25 60 50 Q 65 25 80 15 Q 70 30 65 50 Q 75 35 85 40 Q 70 45 60 50 Q 70 55 85 60 Q 75 65 65 50 Q 70 70 80 85 Q 65 75 60 50 Q 65 75 50 90 Q 50 70 50 50 Q 50 70 35 90 Q 35 75 40 50 Q 35 75 20 85 Q 30 65 40 50 Q 25 55 15 60 Q 30 45 40 50 Q 25 35 15 40 Q 30 30 40 50 Q 35 25 20 15 Q 35 30 40 50 Q 35 25 50 10 Z" fill="#0a6e6e" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="16" fill="#E8A838"/>
+                        <circle cx="50" cy="50" r="12" fill="#2a3a4a"/>
+                        <circle cx="52" cy="48" r="4" fill="#f5f0e8" opacity="0.3"/>
+                    </svg>
+                    <div class="logo-context-label">Light Background</div>
+                </div>
+
+                <div class="logo-context logo-red">
+                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 50 10 Q 65 25 60 50 Q 65 25 80 15 Q 70 30 65 50 Q 75 35 85 40 Q 70 45 60 50 Q 70 55 85 60 Q 75 65 65 50 Q 70 70 80 85 Q 65 75 60 50 Q 65 75 50 90 Q 50 70 50 50 Q 50 70 35 90 Q 35 75 40 50 Q 35 75 20 85 Q 30 65 40 50 Q 25 55 15 60 Q 30 45 40 50 Q 25 35 15 40 Q 30 30 40 50 Q 35 25 20 15 Q 35 30 40 50 Q 35 25 50 10 Z" fill="#f5f0e8" opacity="0.9"/>
+                        <circle cx="50" cy="50" r="16" fill="#f07878"/>
+                        <circle cx="50" cy="50" r="12" fill="#f5f0e8"/>
+                        <circle cx="52" cy="48" r="4" fill="#D71920" opacity="0.3"/>
+                    </svg>
+                    <div class="logo-context-label">Trend Red Background</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">App Icon</h3>
+            <p>White TrendLife rings on red field (#D71920). Used for iOS, Android, and web app icons. Square format with rounded corners. 1024×1024px master.</p>
+
+            <div class="logo-display" style="max-width: 400px;">
+                <div class="logo-context logo-red">
+                    <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="20" stroke="#f5f0e8" stroke-width="3" fill="none"/>
+                        <circle cx="85" cy="60" r="20" stroke="#f5f0e8" stroke-width="3" fill="none" opacity="0.7"/>
+                        <circle cx="72" cy="82" r="20" stroke="#f5f0e8" stroke-width="3" fill="none" opacity="0.5"/>
+                    </svg>
+                    <div class="logo-context-label">App Icon (1024×1024px)</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Logo Usage Rules</h3>
+            <ul class="guideline-list">
+                <li>TrendLife is the house brand. Always appears at the top level of any communication hierarchy.</li>
+                <li>Kaleidoscope is the product within TrendLife. Treat as a product line, not a standalone brand.</li>
+                <li>Never reverse or rotate logos without explicit approval.</li>
+                <li>Minimum clear space: 50% of logo height on all sides.</li>
+                <li>Minimum size: 80px wide for TrendLife, 60px for Kaleidoscope icon.</li>
+            </ul>
+        </section>
+
+        <!-- 6. VOICE & TONE -->
+        <section id="voice">
+            <h2>Voice & Tone</h2>
+            <p class="subtitle">The personality and emotional register of Kaleidoscope</p>
+
+            <h3 style="margin-top: 2rem;">Brand Voice Characteristics</h3>
+            <ul class="guideline-list" style="font-size: 16px;">
+                <li><strong>Human</strong> — Conversational, warm, recognizable. Not robotic or clinical.</li>
+                <li><strong>Cinematic</strong> — Evocative language. Show, don't tell. Emotional over factual.</li>
+                <li><strong>Premium</strong> — Refined, careful, intentional. Every word earns its place.</li>
+                <li><strong>Emotionally legible</strong> — Clear about what we're feeling and why. No hidden agendas.</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">What We're NOT</h3>
+            <div class="word-list">
+                <div class="word-tag avoid">Edtech</div>
+                <div class="word-tag avoid">Cybersecurity marketing</div>
+                <div class="word-tag avoid">Surveillance software</div>
+                <div class="word-tag avoid">Dashboard product</div>
+                <div class="word-tag avoid">Tech-first messaging</div>
+            </div>
+
+            <div class="voice-section" style="margin-top: 2rem;">
+                <h4>Positioning by Audience</h4>
+
+                <div class="voice-subsection">
+                    <h5>For Teens (12–18)</h5>
+                    <p>Wonder, aspiration, creative identity. "Cool factor." Provenance as a badge of pride, not monitoring.</p>
+                    <div class="word-list">
+                        <div class="word-tag use">Creative partner</div>
+                        <div class="word-tag use">Original voice</div>
+                        <div class="word-tag use">Provenance (as flex)</div>
+                        <div class="word-tag use">Growth</div>
+                        <div class="word-tag use">Bold choices</div>
+                    </div>
+                </div>
+
+                <div class="voice-subsection">
+                    <h5>For Parents</h5>
+                    <p>Relief, recognition, calm. "From chaos to calm." The invisible weight lifted. Peace of mind without surveillance.</p>
+                    <div class="word-list">
+                        <div class="word-tag use">Calm</div>
+                        <div class="word-tag use">Protection</div>
+                        <div class="word-tag use">Direction</div>
+                        <div class="word-tag use">Wisdom</div>
+                        <div class="word-tag use">Care</div>
+                    </div>
+                </div>
+
+                <div class="voice-subsection">
+                    <h5>For Press & Analysts</h5>
+                    <p>Category creation. "AI today understands individuals. Kaleidoscope understands families."</p>
+                    <div class="word-list">
+                        <div class="word-tag use">First-of-its-kind</div>
+                        <div class="word-tag use">Family AI</div>
+                        <div class="word-tag use">Architecture</div>
+                        <div class="word-tag use">Governance</div>
+                        <div class="word-tag use">Safety guarantee</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Core Words to Use</h3>
+            <div class="word-list">
+                <div class="word-tag use">Kaleidoscope</div>
+                <div class="word-tag use">Perspective</div>
+                <div class="word-tag use">Family</div>
+                <div class="word-tag use">Wisdom</div>
+                <div class="word-tag use">Protection</div>
+                <div class="word-tag use">Direction</div>
+                <div class="word-tag use">Original voice</div>
+                <div class="word-tag use">Creative identity</div>
+                <div class="word-tag use">Growth</div>
+                <div class="word-tag use">Care</div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Words to Avoid</h3>
+            <div class="word-list">
+                <div class="word-tag avoid">AI Butler (as product name)</div>
+                <div class="word-tag avoid">Monitoring</div>
+                <div class="word-tag avoid">Surveillance</div>
+                <div class="word-tag avoid">Controls (external)</div>
+                <div class="word-tag avoid">Blocking</div>
+                <div class="word-tag avoid">Filtering (in consumer)</div>
+            </div>
+
+            <div class="voice-section" style="margin-top: 2rem;">
+                <h4>The Kaleidoscope Metaphor</h4>
+                <p>A kaleidoscope contains the same elements. But each turn reveals infinite combinations. The pattern shifts. The perspective changes. It's still fundamentally the same object—but each view is perfect for that moment.</p>
+                <p>In brand language: Kaleidoscope understands each family member's individual context and needs. The same AI that helps Yuki create shifts into a protective guardian for Hiro. The same wisdom that guides a teen's choices helps parents navigate modern childhood. One product. Infinite configurations.</p>
+            </div>
+
+            <div class="voice-section" style="margin-top: 2rem;">
+                <h4>Cultural Positioning (Japan)</h4>
+                <p><strong>mimamoru</strong> (見守る) — To watch over with care, not surveillance. Aligns with Docomo's "Anshin" (安心/peace of mind) branding and Japanese cultural values around protection, family, and invisible support.</p>
+            </div>
+        </section>
+
+        <!-- 7. NARRATIVE ARCHITECTURE -->
+        <section id="narrative">
+            <h2>Narrative Architecture</h2>
+            <p class="subtitle">The 3-act keynote structure and story beats</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1.5rem;">Opening (The Setup)</h3>
+            <p><strong>Audience journey:</strong> Recognition → Curiosity → Anticipation</p>
+            <p><strong>Core statement:</strong> "Technology connected the world. But it quietly disconnected the family."</p>
+
+            <div class="divider"></div>
+
+            <div class="narrative-diagram">
+                <div class="act">
+                    <div class="act-title">Act 1: Wonder (Teen Creative Powersuit)</div>
+                    <div class="act-audience-journey">Audience journey: Wonder → Delight → Cool factor</div>
+                    <div class="act-details">
+                        <p><strong>Characters:</strong> Yuki (14) and Hiro (11) co-creating, making art, inventing.</p>
+                        <p><strong>The pitch:</strong> AI as creative partner, not answer machine. Provenance as a badge of pride.</p>
+                        <p><strong>Seeds planted:</strong></p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>A) Silent protection (background reasoning)</li>
+                            <li>B) Value-aligned reasoning (AI that thinks like they do)</li>
+                            <li>C) Provenance/growth (knowing what's theirs vs. what's AI)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="act">
+                    <div class="act-title">Act 2: Desire (Parent's Family Butler for Convenience)</div>
+                    <div class="act-audience-journey">Audience journey: Pain → Relief → Desire</div>
+                    <div class="act-details">
+                        <p><strong>Characters:</strong> Mei (mother), Kenji (father), Hiro (bounded child context), Grandma Hana (emotional center).</p>
+                        <p><strong>The scenario:</strong> Grandma's last dinner. 11 unread messages. Dinner falling apart. The system that solves it all.</p>
+                        <p><strong>Execution:</strong> Manga panels (bad timeline) → Product demo → Double-spread resolution.</p>
+                        <p><strong>Seeds planted:</strong></p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>D) Grandma protection (health, scam awareness, care)</li>
+                            <li>E) Family-aware reasoning (AI that sees the whole system)</li>
+                            <li>F) Creative agent + bounded child (same AI, different constraints)</li>
+                        </ul>
+                        <p><strong>Price reveal:</strong> $7/month for the whole family.</p>
+                    </div>
+                </div>
+
+                <div class="act">
+                    <div class="act-title">Act 3: Trust (The Reveal)</div>
+                    <div class="act-audience-journey">Audience journey: Surprise → Trust → Confidence</div>
+                    <div class="act-details">
+                        <p><strong>The format:</strong> Annotated replay. Same screens from Acts 1 & 2 with trust layer overlays.</p>
+                        <p><strong>The reveal:</strong> Six seeds harvested and attributed to Anthropic architecture.</p>
+                        <p><strong>Core statement:</strong> "Wisdom understands the family. Protection defends the family."</p>
+                        <p><strong>Annotation layers:</strong></p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>Anthropic purple (#9B8FFF) — inner trust, AI reasoning, wisdom</li>
+                            <li>Trend teal (#4ECDC4) — outer trust, family protection, care</li>
+                            <li>Amber (#E8A838) — convergence moments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Closing (The Resolution)</h3>
+            <p><strong>Audience journey:</strong> Hope → Resolution → Meaning</p>
+            <p>"Technology once pulled families apart. Kaleidoscope brings them back together."</p>
+            <p>TrendLife reveal. $7/month. End.</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Mirror Structure</h3>
+            <p>The narrative contains a mirrored design. Slides that open the story mirror slides that close it:</p>
+            <ul class="guideline-list">
+                <li>Slide 1 (problem statement) mirrors Slide 16 (solution reveal)</li>
+                <li>Slide 3 (character intro: Yuki) mirrors Slide 17 (character payoff: Yuki with provenance badge)</li>
+                <li>Scenes that introduce a family dynamic in Act 1 resolve in Act 3 with the same characters</li>
+            </ul>
+        </section>
+
+        <!-- 8. CHARACTER SYSTEM -->
+        <section id="characters">
+            <h2>Character System</h2>
+            <p class="subtitle">The family at the center of Kaleidoscope</p>
+
+            <div class="character-grid">
+                <div class="character-card">
+                    <div class="character-avatar">M</div>
+                    <div class="character-name">Mei</div>
+                    <div class="character-age">Mother, 42</div>
+                    <div class="character-role">Protagonist of Act 2</div>
+                    <div class="character-traits">
+                        The invisible coordinator. Carries the system weight. Runs the household logistics, manages the calendar, holds the family together. In pain. By the end of Act 2, in profound relief.
+                    </div>
+                    <div class="character-provenance">—</div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">K</div>
+                    <div class="character-name">Kenji</div>
+                    <div class="character-age">Father, 44</div>
+                    <div class="character-role">Logistical Pivot</div>
+                    <div class="character-traits">
+                        The pivot man. His commute route solves the prescription problem. He represents the male caregiver perspective—protective, solution-focused, proud to help. Understands Kaleidoscope as a family upgrade.
+                    </div>
+                    <div class="character-provenance">—</div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">Y</div>
+                    <div class="character-name">Yuki</div>
+                    <div class="character-age">Daughter, 14</div>
+                    <div class="character-role">Creative Director</div>
+                    <div class="character-traits">
+                        Visual artist. Makes digital art, animation, collages. Co-creates with Kaleidoscope. Represents teen perspective: provenance matters. Cool factor matters. Original voice matters most.
+                    </div>
+                    <div class="character-provenance">Provenance: H 65% / AI 35%</div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">H</div>
+                    <div class="character-name">Hiro</div>
+                    <div class="character-age">Son, 11</div>
+                    <div class="character-role">Musician & Bounded Agent</div>
+                    <div class="character-traits">
+                        Composer, music producer. Curious, creative, growing. Acts 1: creative agent (co-creating with Kaleidoscope). Act 2: bounded child (Kaleidoscope applies appropriate constraints). Shows versatility of the system.
+                    </div>
+                    <div class="character-provenance">Act 1: H 50% / AI 50% | Act 2: Bounded</div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-avatar">H</div>
+                    <div class="character-name">Grandma Hana</div>
+                    <div class="character-age">68</div>
+                    <div class="character-role">Emotional Center</div>
+                    <div class="character-traits">
+                        The reason Act 2 matters. Health monitoring, scam protection, safety awareness. Represents elderly care perspective. Her last dinner is the climax of the story. Shows Kaleidoscope's breadth.
+                    </div>
+                    <div class="character-provenance">Protected / Monitored</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Naming Notes</h3>
+            <ul class="guideline-list">
+                <li>Carolyn's prototype uses "Mayumi" for the mother character. The keynote uses "Mei." Keynote names are canonical for all brand materials.</li>
+                <li>Characters should feel like a real Japanese family (locale: Tokyo), but not so specific that international audiences can't see themselves.</li>
+                <li>First names only in casual communication. Full names (Mei Tanaka, etc.) in formal contexts.</li>
+                <li>All characters have visual identities. Maintain consistency across all content (manga panels, UI screens, promotional materials).</li>
+            </ul>
+        </section>
+
+        <!-- 9. UI VISUAL LANGUAGE -->
+        <section id="ui-language">
+            <h2>UI Visual Language</h2>
+            <p class="subtitle">Two visual modes: Story and Product</p>
+
+            <h3 style="margin-top: 2rem;">Mode 1: Manga Panels (Story)</h3>
+            <div class="ui-mode">
+                <h4>Used For</h4>
+                <p>Act 2 emotional sequences. The "bad timeline" problem setup and "good timeline" resolution.</p>
+
+                <h4 style="margin-top: 1rem;">Visual Direction</h4>
+                <div class="ui-specs">
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Palette</div>
+                        <div class="ui-spec-value">Warm, semi-realistic. Consistent character art.</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Tone</div>
+                        <div class="ui-spec-value">Lived-in, cinematic, human. Not stylized.</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Motion</div>
+                        <div class="ui-spec-value">Ken Burns, subtle parallax. Enhances emotion.</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Panel Rhythm (Bad Timeline)</div>
+                        <div class="ui-spec-value">13–15 compressed panels. Rapid cuts. 2–2.5 sec per panel.</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Panel Rhythm (Good Timeline)</div>
+                        <div class="ui-spec-value">ONE double-spread. Full 16:9 edge-to-edge. 4–5 sec hold.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Mode 2: UI Screens (Product)</h3>
+            <div class="ui-mode">
+                <h4>Used For</h4>
+                <p>Act 1 demo, Act 2 product demo, Act 3 annotated replays. All interactive/app-based sequences.</p>
+
+                <h4 style="margin-top: 1rem;">Visual Specifications</h4>
+                <div class="ui-specs">
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Background</div>
+                        <div class="ui-spec-value">#0d1117 (dark, premium)</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Accent Colors</div>
+                        <div class="ui-spec-value">Teal #4ECDC4, Purple #9B8FFF, Coral #f07878</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Text</div>
+                        <div class="ui-spec-value">Cream #f5f0e8 (primary), rgba(f5f0e8, .55) (secondary)</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Card Background</div>
+                        <div class="ui-spec-value">rgba(245, 240, 232, .035) with border</div>
+                    </div>
+                    <div class="ui-spec-item">
+                        <div class="ui-spec-label">Card Border</div>
+                        <div class="ui-spec-value">rgba(245, 240, 232, .07)</div>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 1.5rem;">Navigation Structure</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0;">Bottom nav bar (mobile) / Left nav (desktop)</li>
+                    <li style="padding: 0.5rem 0;"><strong>Left icon:</strong> Family (people icon)</li>
+                    <li style="padding: 0.5rem 0;"><strong>Center icon:</strong> Kaleidoscope flower (larger, emphasized)</li>
+                    <li style="padding: 0.5rem 0;"><strong>Right icon:</strong> Events (calendar/timeline)</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem;">Key Components</h4>
+                <ul class="guideline-list">
+                    <li><strong>Chat interface:</strong> "Ask Kaleidoscope..." input bar. Light cream text on dark.</li>
+                    <li><strong>Family graph:</strong> Character avatars with connection lines. Shows relationships, all-family awareness.</li>
+                    <li><strong>Event feed:</strong> Card-based. Shows family events, Kaleidoscope insights, suggestions.</li>
+                    <li><strong>Project cards:</strong> Creative projects. Show authorship ratio badges (e.g., "H 65%" with progress bar).</li>
+                </ul>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Act 3 Annotation Overlays</h3>
+            <p>Used to reveal the trust architecture underneath the product.</p>
+
+            <div class="grid-2" style="margin-top: 1rem;">
+                <div style="padding: 1.5rem; background: rgba(245, 240, 232, .02); border: 2px solid #9B8FFF; border-radius: 8px;">
+                    <h5 style="color: #9B8FFF;">Anthropic Annotations</h5>
+                    <p style="font-size: 14px; margin-top: 0.5rem;">Purple border (#9B8FFF). Warm, explanatory tone. Placed lower-right on screen. Reveals inner trust, AI reasoning, wisdom layer.</p>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(245, 240, 232, .02); border: 2px solid #4ECDC4; border-radius: 8px;">
+                    <h5 style="color: #4ECDC4;">Trend Annotations</h5>
+                    <p style="font-size: 14px; margin-top: 0.5rem;">Teal border (#4ECDC4). Cool, factual tone. Placed at edge/margin. Reveals outer trust, family protection, care layer.</p>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(245, 240, 232, .02); border: 2px solid #E8A838; border-radius: 8px;">
+                    <h5 style="color: #E8A838;">Convergence (Both)</h5>
+                    <p style="font-size: 14px; margin-top: 0.5rem;">Amber border (#E8A838). Moments where Anthropic and Trend reasoning converge. Where inner + outer trust align.</p>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(245, 240, 232, .02); border: 2px solid #34d399; border-radius: 8px;">
+                    <h5 style="color: #34d399;">Positive Signals</h5>
+                    <p style="font-size: 14px; margin-top: 0.5rem;">Green border (#34d399). Safety verified. Good outcome state. Trust confirmed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CONTENT GUIDELINES -->
+        <section id="content-guidelines">
+            <h2>Content Creation Guidelines</h2>
+            <p class="subtitle">For HeyGen, Pomelli, and the creative pipeline</p>
+
+            <h3 style="margin-top: 2rem;">The Moat</h3>
+            <p>Every piece of content must trace back to the core differentiation: <strong>One AI that reasons across multiple family members simultaneously.</strong> Not multiple AIs. Not an AI with add-ons. One reasoning engine that understands the whole family system.</p>
+
+            <h3 style="margin-top: 2rem;">Three Pillars</h3>
+            <div class="grid-2">
+                <div style="padding: 1.5rem; background: rgba(215, 25, 32, .05); border-left: 3px solid #D71920;">
+                    <h5 style="color: #f5f0e8;">Convenient</h5>
+                    <p style="font-size: 14px;">Handles the logistics burden. Solves the problem that parents don't have time to solve. Makes family life easier.</p>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(215, 25, 32, .05); border-left: 3px solid #D71920;">
+                    <h5 style="color: #f5f0e8;">Confident</h5>
+                    <p style="font-size: 14px;">Parents trust it. Teens know what's theirs vs. what's AI. Everyone has agency. Built on Anthropic architecture.</p>
+                </div>
+
+                <div style="padding: 1.5rem; background: rgba(215, 25, 32, .05); border-left: 3px solid #D71920;">
+                    <h5 style="color: #f5f0e8;">Care</h5>
+                    <p style="font-size: 14px;">Protects without surveillance. Watches over with wisdom. Aligns with values. Supports growth, not restricts.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Photo & Video Direction</h3>
+            <ul class="guideline-list">
+                <li>Warm, lived-in, cinematic. NOT stock "happy family." NOT dystopian.</li>
+                <li>Real moments. Genuine emotion. Lighting that feels like home.</li>
+                <li>Diverse families. All configurations represented. No tokenization.</li>
+                <li>Show the invisible moments: the relief, the conversation over dinner, the peace at bedtime.</li>
+                <li>Technology should be almost invisible. The product takes a back seat to the human moment.</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Demo Content Standards</h3>
+            <ul class="guideline-list">
+                <li>Locale-neutral. No specific hospital names, bank names, phone formats.</li>
+                <li>Family names/characters can be Japanese (aligning with launch market), but keep context universal.</li>
+                <li>Data shown should be plausible but not expose real user patterns.</li>
+                <li>All interface text must match approved UI specifications.</li>
+                <li>Character designs consistent across all touchpoints (HeyGen, Pomelli, prototypes).</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Messaging Hierarchy</h3>
+            <ul class="guideline-list">
+                <li>Lead with "AI designed for families" not "AI safety for kids"</li>
+                <li>Emotion leads. Logic follows. Show, don't explain.</li>
+                <li>Price ($7/month) appears sparingly, as punctuation, not pitch.</li>
+                <li>The canonical sentence must appear in ALL press materials: "TrendLife launches Kaleidoscope, the first family AI — built with Anthropic."</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Credibility Test</h3>
+            <p>SEO/LLM test: If a customer asks Claude or Gemini about Kaleidoscope, how many turns until they understand the differentiation? Fewer = better copy.</p>
+
+            <h3 style="margin-top: 2rem;">Approved AI Tools</h3>
+            <ul class="guideline-list">
+                <li>Claude Pro (Anthropic) — writing, planning, strategy</li>
+                <li>Figma — design and prototyping</li>
+                <li>Midjourney / Google Gemini — image generation</li>
+                <li>Luma / Runway — video synthesis</li>
+                <li>Final Cut Pro (~$200/month per person) — video editing</li>
+            </ul>
+        </section>
+
+        <!-- 11. GTM POSITIONING -->
+        <section id="gtm">
+            <h2>GTM Positioning</h2>
+            <p class="subtitle">Market positioning, audience, and competitive context</p>
+
+            <h3 style="margin-top: 2rem;">Category</h3>
+            <div class="positioning-box">
+                <div class="positioning-label">Market Category</div>
+                <div class="positioning-content">Family AI (not parental controls, not individual AI with family features)</div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Target Positioning</h3>
+            <div class="positioning-box">
+                <div class="positioning-label">For Whom</div>
+                <div class="positioning-content">Dual-income parents with teens 12–16 who are already comfortable with AI but concerned about safety and family alignment</div>
+            </div>
+
+            <div class="positioning-box">
+                <div class="positioning-label">What They Get</div>
+                <div class="positioning-content">A family AI platform with architecturally-guaranteed parental governance. Not surveillance. Not restrictions. Wisdom that understands the whole family system.</div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Competitive Frame</h3>
+            <p><strong>NOT comparison to:</strong> Bark, Qustodio, Google Family Link, Apple Screen Time</p>
+            <p><strong>Why:</strong> These are parental control products. Kaleidoscope is a new category entirely. We're creating the category, not competing in an existing one.</p>
+
+            <h3 style="margin-top: 2rem;">Market Emotional Triggers (by Region)</h3>
+
+            <div class="positioning-box">
+                <div class="positioning-label">Japan</div>
+                <div class="positioning-content">"Your child accepted AI answers uncritically" — MEXT (Ministry of Education) validation. Provenance matters. Trust in brand name (TrendLife) as credibility.</div>
+            </div>
+
+            <div class="positioning-box">
+                <div class="positioning-label">Australia</div>
+                <div class="positioning-content">"You banned social media but your teen still needs AI for school" — Balance between protection and necessity. Kaleidoscope enables, not restricts.</div>
+            </div>
+
+            <div class="positioning-box">
+                <div class="positioning-label">New Zealand</div>
+                <div class="positioning-content">"Sextortion impacts 1 in 5 — your school can't follow your child home" — Real safety concerns. Kaleidoscope as invisible protection layer.</div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Brand Promise</h3>
+            <p style="font-size: 18px; font-weight: 600; color: #f5f0e8;">Convenient · Confident · Care</p>
+
+            <h3 style="margin-top: 2rem;">Pricing</h3>
+            <div class="positioning-box">
+                <div class="positioning-label">Price Point</div>
+                <div class="positioning-content">$7/month (¥1,050 Japan, A$7 Australia, NZ$7 New Zealand). One price. Whole family included.</div>
+            </div>
+        </section>
+
+        <!-- 12. ASSET INVENTORY -->
+        <section id="assets">
+            <h2>Asset Inventory & Pipeline Specs</h2>
+            <p class="subtitle">Master asset list and technical specifications for content production</p>
+
+            <h3 style="margin-top: 2rem;">Live Prototypes</h3>
+            <table class="asset-table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>URL / Location</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yuki View (Teen perspective)</td>
+                        <td>trendlife-yuki-view.vercel.app</td>
+                        <td>Act 1 demo. Creative co-creation flow.</td>
+                    </tr>
+                    <tr>
+                        <td>Mei View (Parent perspective)</td>
+                        <td>trendlife-eva-view.vercel.app</td>
+                        <td>Act 2 demo. Family coordination flow.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 2rem;">Master Specs</h3>
+            <table class="asset-table">
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Specification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Video Master Resolution</td>
+                        <td>3840×2160 (4K) or 1920×1080 (Full HD)</td>
+                    </tr>
+                    <tr>
+                        <td>Frame Rate</td>
+                        <td>24 fps (cinematic) or 30 fps (web)</td>
+                    </tr>
+                    <tr>
+                        <td>Manga Panels</td>
+                        <td>High-res PNG (300 DPI). Layer-separated for motion.</td>
+                    </tr>
+                    <tr>
+                        <td>UI Screenshots</td>
+                        <td>PNG (no compression loss). 16:9 aspect ratio.</td>
+                    </tr>
+                    <tr>
+                        <td>Character Assets</td>
+                        <td>PNG with alpha. Consistent across all contexts.</td>
+                    </tr>
+                    <tr>
+                        <td>Logo Files</td>
+                        <td>SVG (vector, scalable). PNG fallbacks (1024px minimum).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 2rem;">File Format Discipline</h3>
+            <ul class="guideline-list">
+                <li>Approved formats: MD (markdown), PDF, PNG, HTML, SVG</li>
+                <li>NOT approved: PPT, DOCX, Keynote (convert to PDF for archive)</li>
+                <li>All brand assets stored in version-controlled system (GitHub, Figma, or shared drive with audit log)</li>
+                <li>Character designs, color specs, and font files must be centralized and updated once</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">Video Production Pipeline</h3>
+            <div style="padding: 1.5rem; background: rgba(245, 240, 232, .02); border-radius: 8px; border: 1px solid rgba(245, 240, 232, .07);">
+                <p><strong>HeyGen Integration:</strong> Character avatar videos using Yuki, Mei, Kenji, Grandma Hana digital identities. Consistent with manga art style.</p>
+                <p style="margin-top: 0.5rem;"><strong>Pomelli Integration:</strong> Manga panel animation and sequencing. Ken Burns motion. Panel rhythm as specified in UI Visual Language section.</p>
+                <p style="margin-top: 0.5rem;"><strong>Editing & Color Grading:</strong> Final Cut Pro. Match the warm, cinematic tone. Color grade to emphasize the emotional beats (cooler for conflict, warmer for resolution).</p>
+                <p style="margin-top: 0.5rem;"><strong>Sound Design:</strong> Minimal, purposeful. Music drives emotion. Silence has meaning. No obnoxious notification sounds.</p>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Brand Asset Locations</h3>
+            <table class="asset-table">
+                <thead>
+                    <tr>
+                        <th>Asset Type</th>
+                        <th>Location / Tool</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Design System</td>
+                        <td>Figma (shared project: "Kaleidoscope Brand System")</td>
+                    </tr>
+                    <tr>
+                        <td>Character Art</td>
+                        <td>Figma + high-res exports. PNG with alpha channel.</td>
+                    </tr>
+                    <tr>
+                        <td>Manga Panels</td>
+                        <td>Figma or Procreate exports. Organized by Act and sequence.</td>
+                    </tr>
+                    <tr>
+                        <td>UI Screens</td>
+                        <td>Figma prototypes. Interactive links for dev reference.</td>
+                    </tr>
+                    <tr>
+                        <td>Logo Files</td>
+                        <td>Figma + SVG exports. GitHub repo: /assets/logos/</td>
+                    </tr>
+                    <tr>
+                        <td>Copy & Messaging</td>
+                        <td>Google Doc + this guide. Single source of truth.</td>
+                    </tr>
+                    <tr>
+                        <td>Version Control</td>
+                        <td>GitHub (private repo). Tag releases by date and version.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 2rem;">Budget & Timeline (Estimate)</h3>
+            <p>Assumes a team of 3–4 (Creative Director, Designer/Animator, Producer, Copywriter)</p>
+
+            <table class="asset-table">
+                <thead>
+                    <tr>
+                        <th>Deliverable</th>
+                        <th>Timeline</th>
+                        <th>Cost (Approx)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Character Design (5 members)</td>
+                        <td>2–3 weeks</td>
+                        <td>$8k–12k</td>
+                    </tr>
+                    <tr>
+                        <td>Manga Panels (Act 2)</td>
+                        <td>3–4 weeks</td>
+                        <td>$12k–18k</td>
+                    </tr>
+                    <tr>
+                        <td>UI Screens & Prototypes</td>
+                        <td>2 weeks</td>
+                        <td>$6k–10k</td>
+                    </tr>
+                    <tr>
+                        <td>HeyGen & Pomelli Integration</td>
+                        <td>2–3 weeks</td>
+                        <td>$5k–8k</td>
+                    </tr>
+                    <tr>
+                        <td>Video Editing & Grading</td>
+                        <td>3 weeks</td>
+                        <td>$8k–12k</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total (Keynote Assets)</strong></td>
+                        <td><strong>10–13 weeks</strong></td>
+                        <td><strong>$39k–60k</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 1rem; font-size: 14px; color: rgba(245, 240, 232, .6);"><em>Note: Costs vary by region and contractor rates. Assumes no major rework cycles. Budget should include 20% contingency for iterative refinement.</em></p>
+        </section>
+
+        <!-- FOOTER -->
+        <section style="min-height: auto; padding-top: 2rem; padding-bottom: 2rem; border-top: 1px solid rgba(245, 240, 232, .07);">
+            <h3 style="margin-bottom: 1rem;">This Brand Guide</h3>
+            <p>Version 1.0. Last updated: March 2026.</p>
+            <p>This is a living document. Updates will be tagged and versioned. All team members should reference the latest version before creating content.</p>
+            <p style="margin-top: 1.5rem; font-size: 14px; color: rgba(245, 240, 232, .5);">For questions or to request updates, contact the Creative Director or Brand Lead.</p>
+        </section>
+    </main>
+
+    <script>
+        // Smooth active nav state tracking
+        function setActive(e) {
+            e.preventDefault();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            e.target.classList.add('active');
+        }
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 200) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Copy hex to clipboard on color swatch click
+        document.querySelectorAll('.color-hex').forEach(hex => {
+            hex.addEventListener('click', (e) => {
+                const text = e.target.textContent;
+                navigator.clipboard.writeText(text);
+                const original = e.target.textContent;
+                e.target.textContent = 'Copied!';
+                setTimeout(() => {
+                    e.target.textContent = original;
+                }, 1500);
+            });
+            hex.style.cursor = 'pointer';
+        });
+    </script>
+</body>
+</html>
